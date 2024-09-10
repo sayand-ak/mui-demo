@@ -9,8 +9,18 @@ import { Container } from '@mui/material';
 import ColorCards from './components/ColorCards';
 
 export default function ButtonAppBar() {
+    
+
     return (
-        <Box sx={{flexGrow: 1, minHeight: '100vh', bgcolor:"#212121"}}>
+        <Box
+            sx={{
+                flexGrow: 1,
+                minHeight: '100vh',
+                bgcolor: "#212121",
+                alignItems: "center",
+                justifyContent: "center"
+            }}
+        >            
             <AppBar color='' position='relative'>
                 <Toolbar>
                     <IconButton
@@ -29,8 +39,8 @@ export default function ButtonAppBar() {
             </AppBar>
 
             <Container sx={{paddingTop: '40px', paddingBottom: '40px'}}>
+                
                 <ColorCards />
-
 
             </Container>
         </Box>

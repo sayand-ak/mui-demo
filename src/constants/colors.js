@@ -77,3 +77,14 @@ export const colors = [
       textColor: '#000',
     },
   ];
+
+export let colorTitle = []
+
+for (let i = 0; i < colors.length; i++) {
+    for (const [key, val] of Object.entries(colors[i])) {    
+        if(key == "title") {
+            colorTitle.push(val);
+        }
+    }
+}
+
